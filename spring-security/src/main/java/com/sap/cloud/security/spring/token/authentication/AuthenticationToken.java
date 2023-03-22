@@ -60,28 +60,13 @@ public class AuthenticationToken extends JwtAuthenticationToken {
 
 	@Override
 	public boolean equals(Object obj) {
-		if (compareObjects(this,obj)) {
-			System.out.println("--------------------------------------1");
-			return true;
-		}
-		if (obj != null && this.getClass() != obj.getClass()) {
-			System.out.println("--------------------------------------2");
-			return false;
-		}
-		if (obj == null) {
-			System.out.println("--------------------------------------3");
-			return false;
-		}
 		AuthenticationToken that = (AuthenticationToken) obj;
-		System.out.println("--------------------------------------4");
-		System.out.println(this.token);
-		System.out.println(that.token);
-		return compareObjects(this.token,that.token) && compareObjects(this.getAuthorities(), that.getAuthorities());
+		return compareObjects(this.token,that.token) && this.getAuthorities().equals(that.getAuthorities());
 	}
 
 	public static boolean compareObjects(Object obj1, Object obj2) {
-		if (obj1 == null || obj2 == null) {
-			return obj1 == obj2;
+		if (obj2 == null) {
+			return false;
 		}
 		if (!obj1.getClass().equals(obj2.getClass())) {
 			return false;
