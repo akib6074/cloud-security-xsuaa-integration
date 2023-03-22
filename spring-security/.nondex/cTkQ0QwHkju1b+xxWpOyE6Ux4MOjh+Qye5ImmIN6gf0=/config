@@ -1,0 +1,11 @@
+nondexFilter=.*
+nondexMode=FULL
+nondexSeed=974622
+nondexStart=0
+nondexEnd=9223372036854775807
+nondexPrintstack=false
+nondexDir=/home/akib/develop/USA/UIUC/My repo/cloud-security-xsuaa-integration/spring-security/.nondex
+nondexJarDir=/home/akib/develop/USA/UIUC/My repo/cloud-security-xsuaa-integration/spring-security/.nondex
+nondexExecid=cTkQ0QwHkju1b+xxWpOyE6Ux4MOjh+Qye5ImmIN6gf0=
+nondexLogging=CONFIG
+test=
